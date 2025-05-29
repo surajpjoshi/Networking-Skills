@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Networking Skills Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      padding: 30px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      padding: 24px 32px;
+      margin-bottom: 24px;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .section-title {
+      font-size: 1.4em;
+      margin-bottom: 16px;
+      color: #1a73e8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .emoji {
+      font-size: 1.4em;
+      margin-right: 10px;
+    }
+    @media (min-width: 768px) {
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+    @media (min-width: 1024px) {
+      .card {
+        flex: 1 1 calc(33.33% - 20px);
+      }
+    }
+
+    /* Light background colors for each card */
+    .card:nth-child(1)  { background-color: #e3f2fd; } /* Light Blue */
+    .card:nth-child(2)  { background-color: #fce4ec; } /* Light Pink */
+    .card:nth-child(3)  { background-color: #e8f5e9; } /* Light Green */
+    .card:nth-child(4)  { background-color: #fff3e0; } /* Light Orange */
+    .card:nth-child(5)  { background-color: #ede7f6; } /* Light Purple */
+    .card:nth-child(6)  { background-color: #f1f8e9; } /* Light Lime */
+    .card:nth-child(7)  { background-color: #f3e5f5; } /* Light Lavender */
+    .card:nth-child(8)  { background-color: #e0f7fa; } /* Light Cyan */
+    .card:nth-child(9)  { background-color: #fffde7; } /* Light Yellow */
+    .card:nth-child(10) { background-color: #fbe9e7; } /* Light Coral */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 Modern Networking Skills Guide</h1>
+
+    <div class="grid">
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🔧</span>Core Networking</h2>
+        <ul>
+          <li>Advanced Routing & Switching – OSPF, BGP, EIGRP, MPLS</li>
+          <li>IPv6 – Growing adoption</li>
+          <li>Multicast & QoS – For real-time traffic</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🛡️</span>Network Security</h2>
+        <ul>
+          <li>Next-Gen Firewalls – Fortinet, Palo Alto, Check Point</li>
+          <li>Network Access Control – Cisco ISE, Aruba ClearPass</li>
+          <li>Zero Trust Architecture – Zscaler, Palo Alto</li>
+          <li>VPN/IPSec/SSL – Still heavily used</li>
+          <li>Network segmentation & Microsegmentation</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🌐</span>Cloud & Hybrid Networking</h2>
+        <ul>
+          <li>AWS / Azure / GCP Networking</li>
+          <li>Hybrid Cloud Design & VPNs</li>
+          <li>Cloud Firewalls & Load Balancers</li>
+          <li>Private connectivity: Direct Connect, ExpressRoute</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">📦</span>SDN & SD-WAN</h2>
+        <ul>
+          <li>Cisco SD-WAN (Viptela)</li>
+          <li>Fortinet Secure SD-WAN</li>
+          <li>VMware Velocloud</li>
+          <li>vManage, vSmart, vBond, overlay/underlay</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🧠</span>Automation & DevNet</h2>
+        <ul>
+          <li>Python for Networking</li>
+          <li>Ansible, Terraform</li>
+          <li>Cisco DevNet Certification</li>
+          <li>REST APIs, Netconf/YANG, SNMP, NAPALM</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">☁️</span>SASE & SSE</h2>
+        <ul>
+          <li>Zscaler, Prisma Access, Netskope</li>
+          <li>Cloud-delivered security & remote access</li>
+          <li>ZTNA (Zero Trust Network Access)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🔍</span>Monitoring & Observability</h2>
+        <ul>
+          <li>ThousandEyes, SolarWinds, PRTG, Grafana</li>
+          <li>Packet analysis: Wireshark, tcpdump</li>
+          <li>NetFlow, sFlow, IPFIX</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🧩</span>Virtualization & Containers</h2>
+        <ul>
+          <li>VMware NSX</li>
+          <li>Kubernetes Networking – Calico, Cilium</li>
+          <li>Service Mesh (Istio)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">💡</span>Soft Skills</h2>
+        <ul>
+          <li>Documentation & Diagramming (Visio, Draw.io)</li>
+          <li>Troubleshooting under pressure</li>
+          <li>Collaboration with DevOps/SecOps</li>
+          <li>Learning mindset – always updating skills</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 class="section-title"><span class="emoji">🎓</span>Certifications</h2>
+        <ul>
+          <li>Cisco: CCNP, CCIE, DevNet</li>
+          <li>Fortinet: NSE4–8</li>
+          <li>Palo Alto: PCNSE</li>
+          <li>AWS: Advanced Networking</li>
+          <li>Zscaler: ZCCA-IA, ZCCP-IA</li>
+          <li>HashiCorp: Terraform Associate</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
